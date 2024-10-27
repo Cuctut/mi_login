@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-feature-settings: "tnum", "tnum";
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: MiSans;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  margin: 0;
+}
+
+a {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+/* 总容器 */
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}

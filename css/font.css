@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MiSans';
+    src: url('../resource/font/woff2/MiSans-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url('../resource/font/woff2/MiSans-Normal.woff2') format('woff2');
+}

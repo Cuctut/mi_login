@@ -1,0 +1,39 @@
+/* 左边样式 */
+.banner {
+  height: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .banner {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    width: 375px;
+  }
+}
+
+.banner_img {
+  height: 100%;
+  width: 0;
+  background-image: url("https://cdn.web-global.fds.api.mi-img.com/mcfe--mi-account/static/static/media/banner.92c693b4..jpg");
+  background-position: 50%;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1000px) {
+  .banner_img {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner_img {
+    width: 375px;
+
+  }
+}

@@ -1,0 +1,250 @@
+/* 右边样式 */
+.login {
+  height: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* 
+  总共三个部分：
+    - 头部（头部标题 和 头部导航）
+    - 主体（登录卡片）
+    - 版权（文字）
+*/
+
+/* 头部 */
+/* 头部标题 */
+.header {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.title {
+  color: #333;
+  font-size: 26px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+}
+
+/* 头部 */
+/* 头部导航 */
+.navigator {
+  float: right;
+  font-size: 0;
+}
+
+.nav_item {
+  color: #838383;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav_item img {
+  color: #838383;
+}
+
+.nav_item:hover {
+  color: #ff6900;
+}
+
+.nav_divider {
+  display: inline-block;
+  height: 14px;
+  vertical-align: middle;
+  width: 0;
+  border-right: 1px solid #ddd;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* 主体 */
+.main {
+  height: 400px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.card {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 450px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 20px 50px 0 hsla(0, 0%, 64%, 0.1);
+  margin: 0 auto 80px;
+  padding: 40px 45px;
+  text-align: left;
+}
+
+.content {
+  width: 360px;
+  font-feature-settings: "tnum", "tnum";
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.tab_list {
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  transition: transform .3s;
+  margin-bottom: 16px;
+}
+
+.tab {
+  margin-right: 20px;
+  padding-bottom: 4px;
+  height: 41px;
+  line-height: 41px;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 22px;
+  font-weight: 600;
+  outline: none;
+  position: relative;
+}
+
+.underline {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  height: 4px;
+  width: 44px;
+  border-radius: 2px;
+  background: #ff5c00;
+  pointer-events: none;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form {
+  padding: 20px 2px 0;
+}
+
+.account, .password {
+  width: 100%;
+  border: 1px, solid transparent;
+  border-radius: 4px;
+  background: #f9f9f9;
+  position: relative;
+}
+
+.password {
+  margin-top: 20px;
+}
+
+.account_input, .password_input {
+  padding: 30px 20px 10px;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  appearance: none;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 17px;
+  width: 100%;
+  height: 60px;
+  line-height: 20px;
+  text-indent: 0px;
+  display: inline-block;
+  text-shadow: none;
+  outline: none;
+}
+
+input:focus {
+  box-shadow: 0px 0px 5px 1px #ff6900;
+  transition: box-shadow .3s ease-in-out;
+}
+
+.floating-label {
+  color: rgba(0, 0, 0, .4);
+  font-size: 17px;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+  max-width: calc(100% - 20px);
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 20px;
+  left: 20px;
+  transition: top .15s cubic-bezier(.4, 0, .2, 1), font-size .15s cubic-bezier(.4, 0, .2, 1), color .15s cubic-bezier(.4, 0, .2, 1);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  cursor: text;
+}
+
+.accept {
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* 版权 */
+.copyright {
+  position: absolute;
+  bottom: 20px;
+  color: #999;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 20px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.copyright > a {
+  color: #999
+}
